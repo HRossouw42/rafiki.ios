@@ -1,27 +1,27 @@
 //
-//  User.swift
+//  Account.swift
 //  rafiki.ios
 //
-//  Created by Harmun Rossouw on 2019/12/03.
+//  Created by Harmun Rossouw on 2019/12/04.
 //  Copyright © 2019 Harmun Rossouw. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class User {
+class Account {
     // MARK: Properties
     
     var name: String
-    var password: String
+    var balance: Double
     
     // MARK: Initialization
     
-    init?(name: String, password: String) {
-        if name.isEmpty || password.isEmpty {
+    init?(name: String, balance: Double) {
+        if name.isEmpty || balance.isNaN {
             return nil
         }
         
         self.name = name
-        self.password = password
+        self.balance = balance
     }
 }

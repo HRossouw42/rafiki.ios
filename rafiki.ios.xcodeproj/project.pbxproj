@@ -15,6 +15,9 @@
 		EA602045239650BD009E8026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA602043239650BD009E8026 /* LaunchScreen.storyboard */; };
 		EA602050239650BE009E8026 /* rafiki_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60204F239650BE009E8026 /* rafiki_iosTests.swift */; };
 		EA60205B2396A230009E8026 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60205A2396A230009E8026 /* User.swift */; };
+		EA60205D2397B651009E8026 /* OverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60205C2397B651009E8026 /* OverviewTableViewCell.swift */; };
+		EA60205F2397D9C1009E8026 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60205E2397D9C1009E8026 /* Account.swift */; };
+		EA6020612397DAD5009E8026 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6020602397DAD5009E8026 /* AccountTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		EA60204F239650BE009E8026 /* rafiki_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rafiki_iosTests.swift; sourceTree = "<group>"; };
 		EA602051239650BE009E8026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA60205A2396A230009E8026 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EA60205C2397B651009E8026 /* OverviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewTableViewCell.swift; sourceTree = "<group>"; };
+		EA60205E2397D9C1009E8026 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		EA6020602397DAD5009E8026 /* AccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,9 @@
 				EA602043239650BD009E8026 /* LaunchScreen.storyboard */,
 				EA602046239650BD009E8026 /* Info.plist */,
 				EA60205A2396A230009E8026 /* User.swift */,
+				EA60205C2397B651009E8026 /* OverviewTableViewCell.swift */,
+				EA60205E2397D9C1009E8026 /* Account.swift */,
+				EA6020602397DAD5009E8026 /* AccountTableViewController.swift */,
 			);
 			path = rafiki.ios;
 			sourceTree = "<group>";
@@ -205,8 +214,11 @@
 			files = (
 				EA60205B2396A230009E8026 /* User.swift in Sources */,
 				EA60203D239650B9009E8026 /* ViewController.swift in Sources */,
+				EA6020612397DAD5009E8026 /* AccountTableViewController.swift in Sources */,
 				EA602039239650B9009E8026 /* AppDelegate.swift in Sources */,
 				EA60203B239650B9009E8026 /* SceneDelegate.swift in Sources */,
+				EA60205D2397B651009E8026 /* OverviewTableViewCell.swift in Sources */,
+				EA60205F2397D9C1009E8026 /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

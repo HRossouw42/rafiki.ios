@@ -9,13 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
+    // MARK: Properties
 
-    //MARK: Properties
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    
-    @IBOutlet weak var titleLabel: UILabel!
-    
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+
+    @IBOutlet var titleLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Handle the text field user input through delegate callbacks.
@@ -23,21 +23,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.delegate = self
     }
 
-    //MARK: UITextFieldDelegate
+    // MARK: UITextFieldDelegate
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        //Hide keyboard
+        // Hide keyboard
         textField.resignFirstResponder()
         return true
     }
-    
+
     func textFieldDidEndEditing(_ textField: UITextField) {
         //titleLabel.text = "Welcome \(nameTextField.text)"
     }
-    
-    //MARK: Actions
+
+    // MARK: Actions
+
     @IBAction func pressLoginButton(_ sender: UIButton) {
         print("login button pressed 👍")
         titleLabel.text = "welcome \(nameTextField.text ?? "Guest")"
     }
 }
-

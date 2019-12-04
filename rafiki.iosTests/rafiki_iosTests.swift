@@ -6,27 +6,48 @@
 //  Copyright © 2019 Harmun Rossouw. All rights reserved.
 //
 
-import XCTest
 @testable import rafiki_ios
+import XCTest
 
 class rafiki_iosTests: XCTestCase {
+    // MARK: User Class Tests
     
-    //MARK: User Class Tests
     func testUserInitializationSucceeds() {
-        let guestUser = User.init(name: "guest", password: "123")
+        let guestUser = User(name: "guest", password: "123")
         XCTAssertNotNil(guestUser)
     }
     
     func testUserInitializationFails() {
         // Empty String for Name
-        let emptyNameStringAccount = User.init(name: "", password: "123")
-        XCTAssertNil(emptyNameStringAccount)
+        let emptyNameStringUser = User(name: "", password: "123")
+        XCTAssertNil(emptyNameStringUser)
         
-        //Empty String for Password
-        let emptyPasswordStringAccount = User.init(name: "testname", password: "")
-        XCTAssertNil(emptyPasswordStringAccount)
+        // Empty String for Password
+        let emptyPasswordStringUser = User(name: "testname", password: "")
+        XCTAssertNil(emptyPasswordStringUser)
     }
-
+    
+    // MARK: Account Class Tests
+    
+    func testAccountInitializationSucceeds() {
+        let guestAccount = Account(name: "Test", balance: 99.999)
+        XCTAssertNotNil(guestAccount)
+        
+        // Negative Balance
+        let negativeBalanceAccount = Account(name: "NegativeTest", balance: -99.999)
+        XCTAssertNotNil(negativeBalanceAccount)
+        
+        // Zero Balance
+        let zeroBalanceAccount = Account(name: "ZeroTest", balance: 0)
+        XCTAssertNotNil(zeroBalanceAccount)
+    }
+    
+    func testAccountInitializationFails() {
+        // Empty String for name
+        let emptyNameStringAccount = Account(name: "", balance: 2000)
+        XCTAssertNil(emptyNameStringAccount)
+    }
+    
 //    override func setUp() {
 //        // Put setup code here. This method is called before the invocation of each test method in the class.
 //    }
@@ -46,5 +67,4 @@ class rafiki_iosTests: XCTestCase {
 //            // Put the code you want to measure the time of here.
 //        }
 //    }
-
 }
