@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA602039239650B9009E8026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA602038239650B8009E8026 /* AppDelegate.swift */; };
+		EA60203B239650B9009E8026 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60203A239650B9009E8026 /* SceneDelegate.swift */; };
+		EA60203D239650B9009E8026 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60203C239650B9009E8026 /* ViewController.swift */; };
+		EA602040239650B9009E8026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA60203E239650B9009E8026 /* Main.storyboard */; };
+		EA602042239650BD009E8026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA602041239650BD009E8026 /* Assets.xcassets */; };
+		EA602045239650BD009E8026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA602043239650BD009E8026 /* LaunchScreen.storyboard */; };
+		EA602050239650BE009E8026 /* rafiki_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60204F239650BE009E8026 /* rafiki_iosTests.swift */; };
+		EA60205B2396A230009E8026 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60205A2396A230009E8026 /* User.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA60204C239650BE009E8026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA60202D239650B8009E8026 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA602034239650B8009E8026;
+			remoteInfo = rafiki.ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA602035239650B8009E8026 /* rafiki.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rafiki.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA602038239650B8009E8026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA60203A239650B9009E8026 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EA60203C239650B9009E8026 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA60203F239650B9009E8026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA602041239650BD009E8026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA602044239650BD009E8026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA602046239650BD009E8026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA60204B239650BE009E8026 /* rafiki.iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rafiki.iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA60204F239650BE009E8026 /* rafiki_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rafiki_iosTests.swift; sourceTree = "<group>"; };
+		EA602051239650BE009E8026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA60205A2396A230009E8026 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA602032239650B8009E8026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA602048239650BE009E8026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA60202C239650B8009E8026 = {
+			isa = PBXGroup;
+			children = (
+				EA602037239650B8009E8026 /* rafiki.ios */,
+				EA60204E239650BE009E8026 /* rafiki.iosTests */,
+				EA602036239650B8009E8026 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA602036239650B8009E8026 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA602035239650B8009E8026 /* rafiki.ios.app */,
+				EA60204B239650BE009E8026 /* rafiki.iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA602037239650B8009E8026 /* rafiki.ios */ = {
+			isa = PBXGroup;
+			children = (
+				EA602038239650B8009E8026 /* AppDelegate.swift */,
+				EA60203A239650B9009E8026 /* SceneDelegate.swift */,
+				EA60203C239650B9009E8026 /* ViewController.swift */,
+				EA60203E239650B9009E8026 /* Main.storyboard */,
+				EA602041239650BD009E8026 /* Assets.xcassets */,
+				EA602043239650BD009E8026 /* LaunchScreen.storyboard */,
+				EA602046239650BD009E8026 /* Info.plist */,
+				EA60205A2396A230009E8026 /* User.swift */,
+			);
+			path = rafiki.ios;
+			sourceTree = "<group>";
+		};
+		EA60204E239650BE009E8026 /* rafiki.iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA60204F239650BE009E8026 /* rafiki_iosTests.swift */,
+				EA602051239650BE009E8026 /* Info.plist */,
+			);
+			path = rafiki.iosTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA602034239650B8009E8026 /* rafiki.ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA602054239650BE009E8026 /* Build configuration list for PBXNativeTarget "rafiki.ios" */;
+			buildPhases = (
+				EA602031239650B8009E8026 /* Sources */,
+				EA602032239650B8009E8026 /* Frameworks */,
+				EA602033239650B8009E8026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rafiki.ios;
+			productName = rafiki.ios;
+			productReference = EA602035239650B8009E8026 /* rafiki.ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA60204A239650BE009E8026 /* rafiki.iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA602057239650BE009E8026 /* Build configuration list for PBXNativeTarget "rafiki.iosTests" */;
+			buildPhases = (
+				EA602047239650BE009E8026 /* Sources */,
+				EA602048239650BE009E8026 /* Frameworks */,
+				EA602049239650BE009E8026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA60204D239650BE009E8026 /* PBXTargetDependency */,
+			);
+			name = rafiki.iosTests;
+			productName = rafiki.iosTests;
+			productReference = EA60204B239650BE009E8026 /* rafiki.iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA60202D239650B8009E8026 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Harmun Rossouw";
+				TargetAttributes = {
+					EA602034239650B8009E8026 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					EA60204A239650BE009E8026 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = EA602034239650B8009E8026;
+					};
+				};
+			};
+			buildConfigurationList = EA602030239650B8009E8026 /* Build configuration list for PBXProject "rafiki.ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA60202C239650B8009E8026;
+			productRefGroup = EA602036239650B8009E8026 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA602034239650B8009E8026 /* rafiki.ios */,
+				EA60204A239650BE009E8026 /* rafiki.iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA602033239650B8009E8026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA602045239650BD009E8026 /* LaunchScreen.storyboard in Resources */,
+				EA602042239650BD009E8026 /* Assets.xcassets in Resources */,
+				EA602040239650B9009E8026 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA602049239650BE009E8026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA602031239650B8009E8026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA60205B2396A230009E8026 /* User.swift in Sources */,
+				EA60203D239650B9009E8026 /* ViewController.swift in Sources */,
+				EA602039239650B9009E8026 /* AppDelegate.swift in Sources */,
+				EA60203B239650B9009E8026 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA602047239650BE009E8026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA602050239650BE009E8026 /* rafiki_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA60204D239650BE009E8026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA602034239650B8009E8026 /* rafiki.ios */;
+			targetProxy = EA60204C239650BE009E8026 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA60203E239650B9009E8026 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA60203F239650B9009E8026 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA602043239650BD009E8026 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA602044239650BD009E8026 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA602052239650BE009E8026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA602053239650BE009E8026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA602055239650BE009E8026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4WQAM2DHR;
+				INFOPLIST_FILE = rafiki.ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HRossouw.rafiki-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA602056239650BE009E8026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4WQAM2DHR;
+				INFOPLIST_FILE = rafiki.ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HRossouw.rafiki-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA602058239650BE009E8026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4WQAM2DHR;
+				INFOPLIST_FILE = rafiki.iosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HRossouw.rafiki-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rafiki.ios.app/rafiki.ios";
+			};
+			name = Debug;
+		};
+		EA602059239650BE009E8026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4WQAM2DHR;
+				INFOPLIST_FILE = rafiki.iosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HRossouw.rafiki-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rafiki.ios.app/rafiki.ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA602030239650B8009E8026 /* Build configuration list for PBXProject "rafiki.ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA602052239650BE009E8026 /* Debug */,
+				EA602053239650BE009E8026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA602054239650BE009E8026 /* Build configuration list for PBXNativeTarget "rafiki.ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA602055239650BE009E8026 /* Debug */,
+				EA602056239650BE009E8026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA602057239650BE009E8026 /* Build configuration list for PBXNativeTarget "rafiki.iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA602058239650BE009E8026 /* Debug */,
+				EA602059239650BE009E8026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA60202D239650B8009E8026 /* Project object */;
+}
