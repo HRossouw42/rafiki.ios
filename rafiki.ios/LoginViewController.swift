@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  rafiki.ios
 //
 //  Created by Harmun Rossouw on 2019/12/03.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     // MARK: Properties
 
     @IBOutlet var nameTextField: UITextField!
