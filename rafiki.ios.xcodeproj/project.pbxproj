@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA37B12323C36A78008D706C /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = EA37B12223C36A78008D706C /* OAuth2 */; };
 		EA602039239650B9009E8026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA602038239650B8009E8026 /* AppDelegate.swift */; };
 		EA60203B239650B9009E8026 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60203A239650B9009E8026 /* SceneDelegate.swift */; };
 		EA60203D239650B9009E8026 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60203C239650B9009E8026 /* LoginViewController.swift */; };
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA37B12323C36A78008D706C /* OAuth2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +132,9 @@
 			dependencies = (
 			);
 			name = rafiki.ios;
+			packageProductDependencies = (
+				EA37B12223C36A78008D706C /* OAuth2 */,
+			);
 			productName = rafiki.ios;
 			productReference = EA602035239650B8009E8026 /* rafiki.ios.app */;
 			productType = "com.apple.product-type.application";
@@ -180,6 +185,9 @@
 				Base,
 			);
 			mainGroup = EA60202C239650B8009E8026;
+			packageReferences = (
+				EA37B12123C36A78008D706C /* XCRemoteSwiftPackageReference "OAuth2" */,
+			);
 			productRefGroup = EA602036239650B8009E8026 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -489,6 +497,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA37B12123C36A78008D706C /* XCRemoteSwiftPackageReference "OAuth2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/p2/OAuth2.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA37B12223C36A78008D706C /* OAuth2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA37B12123C36A78008D706C /* XCRemoteSwiftPackageReference "OAuth2" */;
+			productName = OAuth2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA60202D239650B8009E8026 /* Project object */;
 }

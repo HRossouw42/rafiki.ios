@@ -164,11 +164,18 @@ class AccountTableViewController: UITableViewController {
 
     private func saveAccounts() {
         print("attempting to save accounts")
-        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(accounts, toFile: Account.ArchiveURL.path)
-        // let isSuccesfullSave = try NSKeyedArchiver.archivedData(withRootObject: accounts, requiringSecureCoding: true)
-        if isSuccessfulSave {
+//        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(accounts, toFile: Account.ArchiveURL.path)
+//        // let isSuccesfullSave = try NSKeyedArchiver.archivedData(withRootObject: accounts, requiringSecureCoding: true)
+//        if isSuccessfulSave {
+//            os_log("Accounts succesfully saved.", log: OSLog.default, type: .debug)
+//        } else {
+//            os_log("Failed to save accounts...", log: OSLog.default, type: .error)
+//        }
+        do {
+            let isSuccesfulSave = try NSKeyedArchiver.archivedData(withRootObject: accounts, requiringSecureCoding: true)
+            //try isSuccesfulSave.write(to: Account.ArchiveURL.path)
             os_log("Accounts succesfully saved.", log: OSLog.default, type: .debug)
-        } else {
+        } catch {
             os_log("Failed to save accounts...", log: OSLog.default, type: .error)
         }
     }
