@@ -8,7 +8,6 @@
 
 import Foundation
 import AppAuth
-import Foundation
 
 class AuthService {
     var currentAuthFlow: OIDExternalUserAgentSession?

@@ -49,6 +49,21 @@
                                     <constraint firstAttribute="trailing" secondItem="j1r-CP-5Ij" secondAttribute="trailing" id="lJo-Qg-okV"/>
                                 </constraints>
                             </stackView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Authenticated!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XX-AW-Ds9">
+                                <rect key="frame" x="131" y="191" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fs-Bi-F6a">
+                                <rect key="frame" x="137" y="220" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="LOGIN HYDRA"/>
+                                <connections>
+                                    <action selector="authorize:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1d4-gI-WaB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <accessibility key="accessibilityConfiguration">
@@ -64,6 +79,8 @@
                     <connections>
                         <outlet property="nameTextField" destination="j1r-CP-5Ij" id="EF1-6y-J8W"/>
                         <outlet property="passwordTextField" destination="mQT-RW-5hX" id="gro-be-wlA"/>
+                        <outlet property="testLabel" destination="8XX-AW-Ds9" id="oQM-fe-8Gc"/>
+                        <outlet property="testLoginButton" destination="6Fs-Bi-F6a" id="ecx-ao-ELL"/>
                         <outlet property="titleLabel" destination="Ti0-TE-Vd6" id="xX5-Un-v4V"/>
                     </connections>
                 </viewController>
