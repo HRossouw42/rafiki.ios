@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OAuth2
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     // MARK: Properties
@@ -15,6 +16,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var passwordTextField: UITextField!
 
     @IBOutlet var titleLabel: UILabel!
+    
+    // OAUTH TUTORIAL
+    // https://github.com/p2/OAuth2#installation
 
     override func viewDidLoad() {
         super.viewDidLoad()
