@@ -6,8 +6,8 @@
 //  Copyright © 2020 Harmun Rossouw. All rights reserved.
 //
 
-import Foundation
 import AppAuth
+import Foundation
 
 class AuthService {
     var currentAuthFlow: OIDExternalUserAgentSession?
