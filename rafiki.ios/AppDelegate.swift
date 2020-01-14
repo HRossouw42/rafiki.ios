@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import AppAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    //MARK: Properties
+    var currentAuthorizationFlow: OIDExternalUserAgentSession?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

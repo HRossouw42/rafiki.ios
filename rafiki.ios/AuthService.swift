@@ -10,33 +10,47 @@ import AppAuth
 import Foundation
 
 class AuthService {
-    var currentAuthFlow: OIDExternalUserAgentSession?
+    // MARK: Properties
 
-    private let authEndpoint = URL(string: "https://auth.mojaloop.app/oauth2/auth")!
+    var currentAuthFlow: OIDExternalUserAgentSession?
+    private var authState: OIDAuthState?
+
+    private let authorizationEndpoint = URL(string: "https://auth.mojaloop.app/oauth2/auth")!
     private let tokenEndpoint = URL(string: "https://auth.mojaloop.app/oauth2/token")!
-    private let redirectURL = URL(string: "com.example.app:/oauth2/callback")!
-    private let clientId = "app-client"
+    private lazy var configuration = OIDServiceConfiguration(authorizationEndpoint: authorizationEndpoint, tokenEndpoint: tokenEndpoint)
+
+    private let redirectURI = URL(string: "com.example.app:/oauth2/callback")!
+    private let clientID = "app-client"
     private let clientSecret = "test-secret"
-    private lazy var config = OIDServiceConfiguration(authorizationEndpoint: authEndpoint, tokenEndpoint: tokenEndpoint)
+
+    // MARK: Functions
 
     func authorize(from vc: UIViewController, onSuccess: @escaping (OIDAuthState) -> Void, onError: @escaping (Error) -> Void) {
-        let request = OIDAuthorizationRequest(configuration: config,
-                                              clientId: clientId,
+        // builds authentication request
+        let request = OIDAuthorizationRequest(configuration: configuration,
+                                              clientId: clientID,
                                               clientSecret: clientSecret,
-                                              scopes: [OIDScopeOpenID, "offline"],
-                                              redirectURL: redirectURL,
+                                              scopes: [OIDScopeOpenID],
+                                              redirectURL: redirectURI,
                                               responseType: OIDResponseTypeCode,
                                               additionalParameters: nil)
-        currentAuthFlow = OIDAuthState.authState(byPresenting: request, presenting: vc, callback: { authState, error in
-            if let authState = authState {
-                print("AUTHENTICATED")
-                print(authState)
-                onSuccess(authState)
-            } else if let error = error {
-                print("ERROR!")
-                print(error)
-                onError(error)
+
+        // performs authentication request
+        print("Initiating authorization request with scope: \(request.scope ?? "nil")")
+
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
+        appDelegate.currentAuthorizationFlow =
+            OIDAuthState.authState(byPresenting: request, presenting: vc) { authState, error in
+                if let authState = authState {
+                    self.authState = authState
+                    print("Got authorization tokens. Access token: " +
+                        "\(authState.lastTokenResponse?.accessToken ?? "nil")")
+                } else {
+                    print("Authorization error: \(error?.localizedDescription ?? "Unknown error")")
+                    //print(error!)
+                    self.authState = nil
+                }
             }
-        })
     }
 }

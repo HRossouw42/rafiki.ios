@@ -6,24 +6,23 @@
 //  Copyright © 2019 Harmun Rossouw. All rights reserved.
 //
 
-import UIKit
+import AppAuth
 import OAuth2
+import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     // MARK: Properties
-    
-    let authService = AuthService()
 
+
+//    private var authState: OIDAuthState?
+    @IBOutlet var titleLabel: UILabel!
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
-
-    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var loginButton: UIButton!
+    @IBOutlet var authorizeButton: UIButton!
     
-    //MARK: TEST
-    //REMOVE BELOW
-    @IBOutlet weak var testLoginButton: UIButton!
-    @IBOutlet weak var testLabel: UILabel!
-    //REMOVE ABOVE
+    // Authorisation service
+    let authService = AuthService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,13 +49,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         print("login button pressed 👍")
         titleLabel.text = "welcome \(nameTextField.text ?? "Guest")"
     }
-    
+
     @IBAction func authorize(_ sender: Any) {
-            authService.authorize(from: self, onSuccess: { [weak self] authState in
-                self?.testLoginButton.isHidden = true
-                self?.testLabel.isHidden = false
-            }, onError: { error in
-                print(error)
-            })
+        authService.authorize(from: self, onSuccess: { [weak self] _ in
+            self?.authorizeButton.isHidden = true
+            self?.loginButton.isHidden = false
+        }, onError: { error in
+            print(error)
+        })
     }
 }
