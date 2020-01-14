@@ -63,7 +63,7 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "CLIENT_ID"
-            value = "test-client"
+            value = "app-client"
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable

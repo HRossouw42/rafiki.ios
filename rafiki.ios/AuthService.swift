@@ -29,9 +29,11 @@ class AuthService {
                                               additionalParameters: nil)
         currentAuthFlow = OIDAuthState.authState(byPresenting: request, presenting: vc, callback: { authState, error in
             if let authState = authState {
+                print("AUTHENTICATED")
                 print(authState)
                 onSuccess(authState)
             } else if let error = error {
+                print("ERROR!")
                 print(error)
                 onError(error)
             }
