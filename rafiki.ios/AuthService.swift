@@ -12,10 +12,10 @@ import Foundation
 class AuthService {
     var currentAuthFlow: OIDExternalUserAgentSession?
 
-    private let authEndpoint = URL(string: "http://localhost:4444/oauth2/auth")!
-    private let tokenEndpoint = URL(string: "http://localhost:4444/oauth2/token")!
+    private let authEndpoint = URL(string: "https://auth.mojaloop.app/oauth2/auth")!
+    private let tokenEndpoint = URL(string: "https://auth.mojaloop.app/oauth2/token")!
     private let redirectURL = URL(string: "com.example.app:/oauth2/callback")!
-    private let clientId = "test-client"
+    private let clientId = "app-client"
     private let clientSecret = "test-secret"
     private lazy var config = OIDServiceConfiguration(authorizationEndpoint: authEndpoint, tokenEndpoint: tokenEndpoint)
 
