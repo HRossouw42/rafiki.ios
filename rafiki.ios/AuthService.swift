@@ -15,6 +15,9 @@ class AuthService {
     var currentAuthFlow: OIDExternalUserAgentSession?
     private var authState: OIDAuthState?
 
+//    private let authorizationEndpoint = URL(string: "http://localhost:5555")!
+//    private let tokenEndpoint = URL(string: "http://localhost:4444")!
+
     private let authorizationEndpoint = URL(string: "https://auth.mojaloop.app/oauth2/auth")!
     private let tokenEndpoint = URL(string: "https://auth.mojaloop.app/oauth2/token")!
     private lazy var configuration = OIDServiceConfiguration(authorizationEndpoint: authorizationEndpoint, tokenEndpoint: tokenEndpoint)
@@ -30,7 +33,7 @@ class AuthService {
         let request = OIDAuthorizationRequest(configuration: configuration,
                                               clientId: clientID,
                                               clientSecret: clientSecret,
-                                              scopes: [OIDScopeOpenID],
+                                              scopes: [OIDScopeOpenID, "offline"],
                                               redirectURL: redirectURI,
                                               responseType: OIDResponseTypeCode,
                                               additionalParameters: nil)
@@ -49,8 +52,10 @@ class AuthService {
                 } else {
                     print("Authorization error: \(error?.localizedDescription ?? "Unknown error")")
                     //print(error!)
+                    print(request)
                     self.authState = nil
                 }
             }
     }
+    
 }

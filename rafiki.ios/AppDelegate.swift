@@ -8,6 +8,7 @@
 
 import UIKit
 import AppAuth
+import OAuth2
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -34,7 +35,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
+    
+    // Handles callback redirects
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        if "ppoauthapp" == url.scheme || (url.scheme?.hasPrefix("auth.mojaloop.app"))! {
+            if let vc = UIApplication.shared.windows.first!.rootViewController as? LoginViewController {
+                vc.oauth2.handleRedirectURL(url)
+                return true
+            }
+        }
+        return false
+    }
 
 }
 
