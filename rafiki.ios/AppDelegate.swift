@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import AppAuth
-import OAuth2
+import OAuthSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     //MARK: Properties
-    var currentAuthorizationFlow: OIDExternalUserAgentSession?
+//    var currentAuthorizationFlow: OIDExternalUserAgentSession?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -37,15 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     // Handles callback redirects
-    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        if "ppoauthapp" == url.scheme || (url.scheme?.hasPrefix("auth.mojaloop.app"))! {
-            if let vc = UIApplication.shared.windows.first!.rootViewController as? LoginViewController {
-                vc.oauth2.handleRedirectURL(url)
-                return true
-            }
-        }
-        return false
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey  : Any] = [:]) -> Bool {
+      if (url.host == "oauth-callback") {
+        OAuthSwift.handle(url: url)
+      }
+      return true
     }
-
 }
 

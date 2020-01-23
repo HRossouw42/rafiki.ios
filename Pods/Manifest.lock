@@ -1,20 +1,16 @@
 PODS:
-  - AppAuth (1.3.0):
-    - AppAuth/Core (= 1.3.0)
-    - AppAuth/ExternalUserAgent (= 1.3.0)
-  - AppAuth/Core (1.3.0)
-  - AppAuth/ExternalUserAgent (1.3.0)
+  - OAuthSwift (2.1.0)
 
 DEPENDENCIES:
-  - AppAuth
+  - OAuthSwift
 
 SPEC REPOS:
   trunk:
-    - AppAuth
+    - OAuthSwift
 
 SPEC CHECKSUMS:
-  AppAuth: 73574f3013a1e65b9601a3ddc8b3158cce68c09d
+  OAuthSwift: ab1675598273e04355e0282459c328e65c9ddacd
 
-PODFILE CHECKSUM: e5bb3ccc5800a00ac7aa1ef6278bb1dfcdef7e78
+PODFILE CHECKSUM: 83173d1aa4597e92becd22707659bf127554c657
 
 COCOAPODS: 1.8.4

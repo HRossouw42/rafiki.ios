@@ -6,7 +6,8 @@ target 'rafiki.ios' do
   use_frameworks!
 
   # Pods for rafiki.ios
-	pod 'AppAuth'
+	#pod 'AppAuth'
+	pod 'OAuthSwift'
 
   target 'rafiki.iosTests' do
     inherit! :search_paths
