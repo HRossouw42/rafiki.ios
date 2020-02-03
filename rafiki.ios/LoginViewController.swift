@@ -54,7 +54,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             accessTokenUrl: "https://auth.mojaloop.app/oauth2token",
             responseType: "token"
         )
-        oauthswift.allowMissingStateCheck = true
+//        oauthswift.allowMissingStateCheck = true
+        oauthswift.accessTokenBasicAuthentification = true
 
         // 2
         oauthswift.authorizeURLHandler = SafariURLHandler(viewController: self, oauthSwift: oauthswift)
@@ -69,7 +70,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             case .success(let (credential, response, parameters)):
                 print("Authentication Success")
                 print(credential.oauthToken)
-                }
             // Do your request
             case .failure(let error):
                 print("Auth Failure")
