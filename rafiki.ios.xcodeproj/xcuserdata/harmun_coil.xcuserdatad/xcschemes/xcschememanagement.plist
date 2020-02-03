@@ -7,7 +7,20 @@
 		<key>rafiki.ios.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>EA602034239650B8009E8026</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA60204A239650BE009E8026</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

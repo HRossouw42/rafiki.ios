@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA37B12323C36A78008D706C /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = EA37B12223C36A78008D706C /* OAuth2 */; };
+		8A1390BB6BCFB98325CCD411 /* Pods_rafiki_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48360B5D5257AE0907243D9B /* Pods_rafiki_iosTests.framework */; };
+		B66B3108B053FF735D45B5B6 /* Pods_rafiki_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D136A40B54582C3B78022773 /* Pods_rafiki_ios.framework */; };
+		EA37B12323C36A78008D706C /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = EA37B12223C36A78008D706C /* SwiftPackageProductDependency */; };
 		EA602039239650B9009E8026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA602038239650B8009E8026 /* AppDelegate.swift */; };
 		EA60203B239650B9009E8026 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60203A239650B9009E8026 /* SceneDelegate.swift */; };
 		EA60203D239650B9009E8026 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60203C239650B9009E8026 /* LoginViewController.swift */; };
@@ -19,6 +21,7 @@
 		EA60205D2397B651009E8026 /* OverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60205C2397B651009E8026 /* OverviewTableViewCell.swift */; };
 		EA60205F2397D9C1009E8026 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60205E2397D9C1009E8026 /* Account.swift */; };
 		EA6020612397DAD5009E8026 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6020602397DAD5009E8026 /* AccountTableViewController.swift */; };
+		EAC7C73823C89BE60098FC5D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC7C73723C89BE60098FC5D /* AuthService.swift */; };
 		EAE69CB223990AA8005969B1 /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE69CB123990AA8005969B1 /* AddAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14CD8ADA530D21EA9C425C5F /* Pods-rafiki.iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rafiki.iosTests.release.xcconfig"; path = "Target Support Files/Pods-rafiki.iosTests/Pods-rafiki.iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		190416A24E88D018DC5CEA5B /* Pods-rafiki.ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rafiki.ios.debug.xcconfig"; path = "Target Support Files/Pods-rafiki.ios/Pods-rafiki.ios.debug.xcconfig"; sourceTree = "<group>"; };
+		48360B5D5257AE0907243D9B /* Pods_rafiki_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rafiki_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58904BB933D86EB03CB8908B /* Pods-rafiki.ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rafiki.ios.release.xcconfig"; path = "Target Support Files/Pods-rafiki.ios/Pods-rafiki.ios.release.xcconfig"; sourceTree = "<group>"; };
+		B5C95628AB312F180C7DA3B1 /* Pods-rafiki.iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rafiki.iosTests.debug.xcconfig"; path = "Target Support Files/Pods-rafiki.iosTests/Pods-rafiki.iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D136A40B54582C3B78022773 /* Pods_rafiki_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rafiki_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA602035239650B8009E8026 /* rafiki.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rafiki.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA602038239650B8009E8026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA60203A239650B9009E8026 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +57,7 @@
 		EA60205C2397B651009E8026 /* OverviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewTableViewCell.swift; sourceTree = "<group>"; };
 		EA60205E2397D9C1009E8026 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		EA6020602397DAD5009E8026 /* AccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
+		EAC7C73723C89BE60098FC5D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		EAE69CB123990AA8005969B1 /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA37B12323C36A78008D706C /* OAuth2 in Frameworks */,
+				EA37B12323C36A78008D706C /* BuildFile in Frameworks */,
+				B66B3108B053FF735D45B5B6 /* Pods_rafiki_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,18 +75,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1390BB6BCFB98325CCD411 /* Pods_rafiki_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DCCC5D45A884FD1754EAD92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D136A40B54582C3B78022773 /* Pods_rafiki_ios.framework */,
+				48360B5D5257AE0907243D9B /* Pods_rafiki_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEDEF1F7564A90D96E8C8C28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				190416A24E88D018DC5CEA5B /* Pods-rafiki.ios.debug.xcconfig */,
+				58904BB933D86EB03CB8908B /* Pods-rafiki.ios.release.xcconfig */,
+				B5C95628AB312F180C7DA3B1 /* Pods-rafiki.iosTests.debug.xcconfig */,
+				14CD8ADA530D21EA9C425C5F /* Pods-rafiki.iosTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EA60202C239650B8009E8026 = {
 			isa = PBXGroup;
 			children = (
 				EA602037239650B8009E8026 /* rafiki.ios */,
 				EA60204E239650BE009E8026 /* rafiki.iosTests */,
 				EA602036239650B8009E8026 /* Products */,
+				DEDEF1F7564A90D96E8C8C28 /* Pods */,
+				4DCCC5D45A884FD1754EAD92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +138,7 @@
 				EA60205C2397B651009E8026 /* OverviewTableViewCell.swift */,
 				EA6020602397DAD5009E8026 /* AccountTableViewController.swift */,
 				EAE69CB123990AA8005969B1 /* AddAccountViewController.swift */,
+				EAC7C73723C89BE60098FC5D /* AuthService.swift */,
 			);
 			path = rafiki.ios;
 			sourceTree = "<group>";
@@ -123,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA602054239650BE009E8026 /* Build configuration list for PBXNativeTarget "rafiki.ios" */;
 			buildPhases = (
+				6A0C567F5C566625F703DA11 /* [CP] Check Pods Manifest.lock */,
 				EA602031239650B8009E8026 /* Sources */,
 				EA602032239650B8009E8026 /* Frameworks */,
 				EA602033239650B8009E8026 /* Resources */,
+				6BB830426452B12863328794 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,7 +171,7 @@
 			);
 			name = rafiki.ios;
 			packageProductDependencies = (
-				EA37B12223C36A78008D706C /* OAuth2 */,
+				EA37B12223C36A78008D706C /* SwiftPackageProductDependency */,
 			);
 			productName = rafiki.ios;
 			productReference = EA602035239650B8009E8026 /* rafiki.ios.app */;
@@ -143,6 +181,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA602057239650BE009E8026 /* Build configuration list for PBXNativeTarget "rafiki.iosTests" */;
 			buildPhases = (
+				4E23FC12D9364CAF87FEF6F1 /* [CP] Check Pods Manifest.lock */,
 				EA602047239650BE009E8026 /* Sources */,
 				EA602048239650BE009E8026 /* Frameworks */,
 				EA602049239650BE009E8026 /* Resources */,
@@ -186,7 +225,7 @@
 			);
 			mainGroup = EA60202C239650B8009E8026;
 			packageReferences = (
-				EA37B12123C36A78008D706C /* XCRemoteSwiftPackageReference "OAuth2" */,
+				EA37B12123C36A78008D706C /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = EA602036239650B8009E8026 /* Products */;
 			projectDirPath = "";
@@ -218,6 +257,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E23FC12D9364CAF87FEF6F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rafiki.iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A0C567F5C566625F703DA11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rafiki.ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BB830426452B12863328794 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rafiki.ios/Pods-rafiki.ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rafiki.ios/Pods-rafiki.ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rafiki.ios/Pods-rafiki.ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA602031239650B8009E8026 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -226,6 +329,7 @@
 				EA60205B2396A230009E8026 /* User.swift in Sources */,
 				EA60203D239650B9009E8026 /* LoginViewController.swift in Sources */,
 				EA6020612397DAD5009E8026 /* AccountTableViewController.swift in Sources */,
+				EAC7C73823C89BE60098FC5D /* AuthService.swift in Sources */,
 				EA602039239650B9009E8026 /* AppDelegate.swift in Sources */,
 				EA60203B239650B9009E8026 /* SceneDelegate.swift in Sources */,
 				EA60205D2397B651009E8026 /* OverviewTableViewCell.swift in Sources */,
@@ -388,6 +492,7 @@
 		};
 		EA602055239650BE009E8026 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 190416A24E88D018DC5CEA5B /* Pods-rafiki.ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -406,6 +511,7 @@
 		};
 		EA602056239650BE009E8026 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58904BB933D86EB03CB8908B /* Pods-rafiki.ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -424,6 +530,7 @@
 		};
 		EA602058239650BE009E8026 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5C95628AB312F180C7DA3B1 /* Pods-rafiki.iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -446,6 +553,7 @@
 		};
 		EA602059239650BE009E8026 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14CD8ADA530D21EA9C425C5F /* Pods-rafiki.iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -499,7 +607,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EA37B12123C36A78008D706C /* XCRemoteSwiftPackageReference "OAuth2" */ = {
+		EA37B12123C36A78008D706C /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/p2/OAuth2.git";
 			requirement = {
@@ -510,9 +618,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EA37B12223C36A78008D706C /* OAuth2 */ = {
+		EA37B12223C36A78008D706C /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EA37B12123C36A78008D706C /* XCRemoteSwiftPackageReference "OAuth2" */;
+			package = EA37B12123C36A78008D706C /* RemoteSwiftPackageReference */;
 			productName = OAuth2;
 		};
 /* End XCSwiftPackageProductDependency section */
